@@ -1,0 +1,143 @@
+
+:root{
+    --primery-text-color: #757575 ;
+    --title-text-color: #212121 ;
+    --accent-color: #2196F3 ;
+    --secondary-backgraund: #2196F3 ;
+}
+body{
+    color: var(--primery-text-color) ;
+    background: #F5F5F5 ;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.03em;
+}
+ul{
+    list-style: none;
+}
+/* site nav */
+.logo{
+    color:var(--accent-color) ;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    }
+.link-current{
+    color: var(--accent-color);
+}
+.part-logo{
+    color:#000000 ;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+}
+.site-nav .link{
+    color: var(--title-text-color) ;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+.site-nav .link:hover, 
+.site-nav .link:focus{
+    color: var(--accent-color);
+} 
+.auth-nav-cont{
+    color: var(--title-text-color);
+    font-weight: 500;
+}
+.auth-nav-cont:hover,
+.auth-nav-cont:focus{
+    color: var(--accent-color);
+
+}
+
+/* Hero */
+.section-main{
+    color: #FFFFFF ;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 44px;
+    text-align: center;
+    line-height: 1.36;
+}
+/* кнопка */
+.button{
+    color: #FFFFFF ;
+    background-color: var(--secondary-backgraund);
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+
+}
+
+/* скрыть заголовок */
+.section-advantages{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.section-tit{
+    color: var(--title-text-color) ;
+    text-transform: uppercase ;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+}
+.section-title{
+    color: var(--title-text-color);
+}
+.section-titl{
+    color: var(--title-text-color);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+}
+/* Портфолио */
+.sectport-title{
+    color: var(--title-text-color);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+}
+
+.butt{
+    color: var(--title-text-color);
+     font-weight: 500;
+     font-size: 16px;
+     line-height: 26px;
+     text-align: center;
+     etter-spacing: 0.03em;
+     cursor: pointer;
+}
+.butt:hover,
+.butt:focus{
+    color: var(--accent-color);
+}
+.footcont{
+    /* bcg задан для контраста */
+    background-color: #212121;
+    color: rgba(255, 255, 255, 0.6);
+     font-weight: 400;
+     font-size: 14px;
+     line-height: 1.71;
+     letter-spacing: 0.03em;
+}
+.footcont:hover,
+.footcont:focus{
+    color: var(--accent-color);
+}
