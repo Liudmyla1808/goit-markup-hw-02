@@ -2,19 +2,33 @@
 :root{
     --primery-text-color: #757575 ;
     --title-text-color: #212121 ;
+    --second-text: #000000;
+    --tres-text: #FFFFFF;
     --accent-color: #2196F3 ;
     --secondary-backgraund: #2196F3 ;
+    --dcg-color: #F5F5F5 ;
+    --bcg-fon: #2F303A ;
+    --bcg-grey: #F5F4FA;
+    
+}
+a{
+    text-decoration: none;
 }
 body{
     color: var(--primery-text-color) ;
-    background: #F5F5F5 ;
+    background-color: var(--tres-text);
     font-family: 'Roboto', sans-serif;
+    font-size: 14px;
     letter-spacing: 0.03em;
 }
 ul{
     list-style: none;
 }
-/* site nav */
+
+/* Header */
+.page-header{
+    background-color: var(--tres-text);
+}
 .logo{
     color:var(--accent-color) ;
     font-family: 'Raleway', sans-serif;
@@ -24,9 +38,11 @@ ul{
     }
 .link-current{
     color: var(--accent-color);
+    font-family: 'Roboto';
+    font-weight: 500;
 }
 .part-logo{
-    color:#000000 ;
+    color:var(--second-text) ;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -34,18 +50,24 @@ ul{
 }
 .site-nav .link{
     color: var(--title-text-color) ;
+    font-family: 'Roboto';
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
+
 .site-nav .link:hover, 
 .site-nav .link:focus{
     color: var(--accent-color);
 } 
 .auth-nav-cont{
-    color: var(--title-text-color);
+    color: var(--primery-text-color);
+    font-family: 'Roboto';
     font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 }
 .auth-nav-cont:hover,
 .auth-nav-cont:focus{
@@ -54,8 +76,12 @@ ul{
 }
 
 /* Hero */
+.section-hero{
+    font-family: 'Roboto';
+    background-color:var(--bcg-fon) ;
+}
 .section-main{
-    color: #FFFFFF ;
+    color: var(--tres-text) ;
     text-transform: uppercase;
     font-weight: 900;
     font-size: 44px;
@@ -64,7 +90,7 @@ ul{
 }
 /* кнопка */
 .button{
-    color: #FFFFFF ;
+    color: var(--tres-text) ;
     background-color: var(--secondary-backgraund);
     font-family: inherit;
     font-weight: 700;
@@ -74,9 +100,16 @@ ul{
     cursor: pointer;
 
 }
-
+.button:hover,
+.button:focus{
+    background-color: var(--bcg-fon);
+}
+/* Perevagu */
+.section-perevag{
+    background-color:var(--dcg-color) ;
+}
 /* скрыть заголовок */
-.section-advantages{
+.visually-hidden{
     position: absolute;
     width: 1px;
     height: 1px;
@@ -96,20 +129,61 @@ ul{
     font-size: 14px;
     line-height: 1.14;
 }
+/* What are we doing& */
+.section-robota{
+    background-color: var(--dcg-color);
+}
+/* Comanda */
+.section-comanda{
+    background-color: var(--bcg-grey) ;
+}
+.color{
+    background-color: var(--dcg-color);
+}
 .section-title{
     color: var(--title-text-color);
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
 }
 .section-titl{
     color: var(--title-text-color);
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
 }
+/* Footer */
+.footer{
+    background-color: var(--bcg-fon);
+}
+.part-logofut{
+    color: var(--tres-text);
+}
+.address{
+    font-style: normal;
+}
+
+.footcont{
+    
+    color: rgba(255, 255, 255, 0.6);
+     font-weight: 400;
+     font-size: 14px;
+     line-height: 1.71;
+     letter-spacing: 0.03em;
+}
+.footcontadres{
+    color: var(--tres-text);
+}
+.footcont:hover,
+.footcont:focus{
+    color: var(--accent-color);
+}
+
 /* Портфолио */
 .sectport-title{
     color: var(--title-text-color);
-    font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -117,27 +191,21 @@ ul{
 
 .butt{
     color: var(--title-text-color);
+    background-color: #F5F4FA;
+     font-family: 'Roboto';
      font-weight: 500;
      font-size: 16px;
-     line-height: 26px;
+     line-height: 1.63;
      text-align: center;
-     etter-spacing: 0.03em;
+     letter-spacing: 0.03em;
      cursor: pointer;
 }
 .butt:hover,
 .butt:focus{
-    color: var(--accent-color);
+    color: var(--tres-text);
+    background-color:var(--accent-color)
+
 }
-.footcont{
-    /* bcg задан для контраста */
-    background-color: #212121;
-    color: rgba(255, 255, 255, 0.6);
-     font-weight: 400;
-     font-size: 14px;
-     line-height: 1.71;
-     letter-spacing: 0.03em;
-}
-.footcont:hover,
-.footcont:focus{
-    color: var(--accent-color);
+.text{
+    color: var(--primery-text-color);
 }
